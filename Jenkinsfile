@@ -18,13 +18,13 @@ pipeline {
 
         stage ("terraform plan") {
         steps{
-          sh "teraform plan"
+          sh "terraform plan"
         }
     }
 
         stage ("terraform apply") {
         steps{
-         sh "teraform apply -auto-approve"
+         sh "terraform apply -auto-approve"
         }
     }
            
